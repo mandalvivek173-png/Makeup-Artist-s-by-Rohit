@@ -1,0 +1,6 @@
+{
+  "name": "Artist Makeup's A to Z",
+  "description": "Professional freelance makeup artistry, hair styling, prosthetic SFX makeup, and professional courses by Rohit Gupta.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
