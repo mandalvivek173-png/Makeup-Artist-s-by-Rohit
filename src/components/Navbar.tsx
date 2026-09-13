@@ -29,15 +29,15 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-rose-100 bg-white/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl h-16 sm:h-20 items-center justify-between px-3 sm:px-6 lg:px-8 gap-2">
         
         {/* Logo / Brand */}
         <div 
           onClick={() => handleNavClick('home')} 
-          className="flex cursor-pointer items-center space-x-2.5 sm:space-x-3 group min-w-0"
+          className="flex cursor-pointer items-center space-x-2 sm:space-x-3 group min-w-0 shrink"
           id="nav-logo"
         >
-          <div className="flex h-11 w-11 sm:h-14 sm:w-14 shrink-0 items-center justify-center overflow-hidden rounded-full border border-amber-400/80 bg-neutral-950 p-1 shadow-md transition-transform duration-300 group-hover:scale-105">
+          <div className="flex h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 shrink-0 items-center justify-center overflow-hidden rounded-full border border-amber-400/80 bg-neutral-950 p-1 shadow-md transition-transform duration-300 group-hover:scale-105">
             <img 
               src="https://i.ibb.co/B2z8StcV/image.png" 
               alt="Makeup's-anywhere. Logo" 
@@ -45,11 +45,13 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
               referrerPolicy="no-referrer"
             />
           </div>
-          <div className="min-w-0 flex flex-col justify-center">
-            <h1 className="font-serif text-sm sm:text-lg font-bold tracking-tight text-neutral-900 whitespace-nowrap">
+          <div className="min-w-0 flex flex-col justify-center select-none">
+            <span className="font-serif text-xs sm:text-base md:text-lg font-bold tracking-tight text-neutral-900 leading-tight block truncate">
               Makeup's-<span className="bg-gradient-to-r from-amber-600 to-rose-600 bg-clip-text text-transparent font-extrabold">anywhere.</span>
-            </h1>
-            <p className="text-[10px] uppercase tracking-widest text-neutral-500 font-mono whitespace-nowrap">by Rohit kumar</p>
+            </span>
+            <span className="text-[9px] sm:text-[10px] md:text-xs uppercase tracking-widest text-neutral-500 font-mono leading-tight block truncate mt-0.5">
+              by Rohit kumar
+            </span>
           </div>
         </div>
 
@@ -79,7 +81,7 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
           ))}
         </nav>
 
-        {/* Quick Contact & Action (Shifted to the right side) */}
+        {/* Quick Contact & Action (Shifted to the right side on desktop) */}
         <div className="hidden sm:flex items-center space-x-3 ml-auto pl-4 shrink-0">
           <button
             onClick={() => handleNavClick('contact')}
@@ -99,21 +101,21 @@ export default function Navbar({ activePage, setActivePage }: NavbarProps) {
           </button>
         </div>
 
-        {/* Mobile menu button */}
-        <div className="flex lg:hidden items-center space-x-2.5 ml-auto">
+        {/* Mobile menu and contact button */}
+        <div className="flex lg:hidden items-center space-x-1.5 sm:space-x-2.5 shrink-0 ml-auto">
           <button
             onClick={() => handleNavClick('contact')}
-            className="bg-gradient-to-r from-amber-500 to-rose-600 text-white px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide sm:hidden cursor-pointer"
+            className="bg-gradient-to-r from-amber-500 to-rose-600 text-white px-2.5 py-1.5 sm:px-3.5 sm:py-1.5 rounded-full text-[11px] sm:text-xs font-semibold tracking-wide sm:hidden cursor-pointer shadow-xs whitespace-nowrap shrink-0 active:scale-95"
           >
             Contact us
           </button>
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="rounded-lg p-2 text-neutral-600 hover:bg-rose-50 hover:text-rose-600 focus:outline-none cursor-pointer"
+            className="rounded-lg p-1.5 sm:p-2 text-neutral-600 hover:bg-rose-50 hover:text-rose-600 focus:outline-none cursor-pointer shrink-0"
             aria-label="Toggle Menu"
             id="nav-mobile-toggle"
           >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isOpen ? <X className="h-5 w-5 sm:h-6 sm:w-6" /> : <Menu className="h-5 w-5 sm:h-6 sm:w-6" />}
           </button>
         </div>
       </div>

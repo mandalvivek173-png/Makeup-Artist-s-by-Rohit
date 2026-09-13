@@ -710,13 +710,6 @@ export const PORTFOLIO: PortfolioItem[] = [
     description: 'Bold theatrical character styling crafted for maximum stage visibility under strong theater spotlights.'
   },
   {
-    id: 'theatre-3',
-    title: 'Expressive Drama Character Artistry',
-    category: 'character',
-    image: 'https://i.ibb.co/j951g7xt/image.png',
-    description: 'Distinctive stage drama character makeup with defined eyebrows, dramatic accents, and durable pigments.'
-  },
-  {
     id: 'theatre-4',
     title: 'Theatrical Narrative Character Look',
     category: 'character',
@@ -745,39 +738,46 @@ export const PORTFOLIO: PortfolioItem[] = [
     description: 'Heavy-duty theatrical stage character makeup ensuring longevity and bold visual impact from any seat.'
   },
   {
-    id: 'theatre-8',
-    title: 'Dynamic Stage Play Role Makeover',
+    id: 'theatre-new-1',
+    title: 'Dramatic Zipper Face FX Character Makeup',
     category: 'character',
-    image: 'https://i.ibb.co/prfBj1cW/image.png',
-    description: 'Comprehensive character transformation for live theatre, musicals, and classical drama acts.'
+    image: 'https://i.ibb.co/XfpkXMvd/image.png',
+    description: 'Intense theatrical special effects look blending classic character aesthetics with striking prosthetic zipper detailing and blood FX work.'
   },
   {
-    id: 'char-1',
-    title: 'Theatrical Character Transformation',
+    id: 'theatre-new-2',
+    title: 'Bold Antagonist Stage Character Styling',
     category: 'character',
-    image: 'https://i.ibb.co/21pXNYXV/image.png',
-    description: 'Detailed stage character makeups featuring robust sweatproof colors and sharp contouring for intense theatre lights.'
+    image: 'https://i.ibb.co/TxQKMP6K/image.png',
+    description: 'Dramatic dark eye makeup combined with detailed facial contouring creates an intense, regal presence for theatrical performances.'
   },
   {
-    id: 'char-3',
-    title: 'Stage Drama Character Design',
+    id: 'theatre-new-3',
+    title: 'Custom Character Styling for Theatre Production',
     category: 'character',
-    image: 'https://i.ibb.co/ZRY3GQrB/image.png',
-    description: 'Bold, expressive lines and high-contrast styling designed for maximum visibility in large amphitheaters.'
+    image: 'https://i.ibb.co/ycQnNcK6/image.png',
+    description: 'Backstage capture highlighting detailed character styling, custom hair work, and theatrical makeup created for live stage performance.'
   },
   {
-    id: 'char-4',
-    title: 'Advanced Prosthetic Sculpting',
+    id: 'theatre-new-4',
+    title: 'Backstage Character FX Application',
     category: 'character',
-    image: 'https://i.ibb.co/tPhtwW9d/image.png',
-    description: 'Three-dimensional wound aging, scars, and tissue modeling applied professionally using liquid latex.'
+    image: 'https://i.ibb.co/bR3KLkNt/image.png',
+    description: 'Professional backstage makeup application featuring bold face paint and theatrical accents crafted for intense stage scenes.'
   },
   {
-    id: 'char-5',
-    title: 'Cinematic Actor Character Profile',
+    id: 'theatre-new-5',
+    title: 'Royal Character Transformation for Stage Drama',
     category: 'character',
-    image: 'https://i.ibb.co/wNtkjYN5/image.png',
-    description: 'Custom character makeup aligned precisely with the script demands and emotional scene backdrops of cinema.'
+    image: 'https://i.ibb.co/KcCZ5ypC/image.png',
+    description: 'Precise final touch-ups applied to an actor dressed in regal traditional attire for a high-impact theatrical production.'
+  },
+  {
+    id: 'theatre-new-6',
+    title: 'Traditional Mythological Character Makeup',
+    category: 'character',
+    image: 'https://i.ibb.co/99Yhx06G/image.png',
+    description: 'Intricate mythological character makeup with traditional face painting and theatrical accents designed for captivating live stage performances.'
   },
 
   // ✦ Wedding Events Collection
